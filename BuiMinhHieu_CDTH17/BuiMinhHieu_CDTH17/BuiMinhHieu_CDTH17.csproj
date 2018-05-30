@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{046E1539-07C7-4194-92DD-2583299CDFE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuiMinhHieu_CDTH17</RootNamespace>
+    <AssemblyName>BuiMinhHieu_CDTH17</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buiminhhieu_Qlthuhocphi_17DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSInbienlai.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInbienlai.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form\BIENLAI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\BIENLAI.Designer.cs">
+      <DependentUpon>BIENLAI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\DOITUONGMG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\DOITUONGMG.Designer.cs">
+      <DependentUpon>DOITUONGMG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\HOCSINH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\HOCSINH.Designer.cs">
+      <DependentUpon>HOCSINH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\LOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\LOP.Designer.cs">
+      <DependentUpon>LOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\MUCTHU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\MUCTHU.Designer.cs">
+      <DependentUpon>MUCTHU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\THEODOILICHAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\THEODOILICHAN.Designer.cs">
+      <DependentUpon>THEODOILICHAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\InBienLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\InBienLai.Designer.cs">
+      <DependentUpon>InBienLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="form\BIENLAI.resx">
+      <DependentUpon>BIENLAI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\DOITUONGMG.resx">
+      <DependentUpon>DOITUONGMG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\HOCSINH.resx">
+      <DependentUpon>HOCSINH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\LOP.resx">
+      <DependentUpon>LOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\MUCTHU.resx">
+      <DependentUpon>MUCTHU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\THEODOILICHAN.resx">
+      <DependentUpon>THEODOILICHAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\InBienLai.resx">
+      <DependentUpon>InBienLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportInBienLai.rdlc" />
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet1.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet1.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet10.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet10.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet11.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet11.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet12.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet12.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet13.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet13.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet2.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet2.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet3.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet3.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet4.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet4.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet5.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet5.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet6.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet6.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet7.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet7.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet8.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet8.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet9.xsc">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Buiminhhieu_Qlthuhocphi_17DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buiminhhieu_Qlthuhocphi_17DataSet9.xss">
+      <DependentUpon>Buiminhhieu_Qlthuhocphi_17DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DSInbienlai.xsc">
+      <DependentUpon>DSInbienlai.xsd</DependentUpon>
+    </None>
+    <None Include="DSInbienlai.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInbienlai.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSInbienlai.xss">
+      <DependentUpon>DSInbienlai.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jungle_fantasy_deer_butterflies_night_trees_102121_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tai-hinh-nen-may-tinh-full-hd-dep-nhat-15-1024x640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
