@@ -17,3 +17,6 @@ E:\Bai Tap Tot Nghiep\BuiMinhHieu_CDTH17\BuiMinhHieu_CDTH17\obj\Debug\BuiMinhHie
 E:\Bai Tap Tot Nghiep\BuiMinhHieu_CDTH17\BuiMinhHieu_CDTH17\obj\Debug\RdlCompile.cache
 E:\Bai Tap Tot Nghiep\BuiMinhHieu_CDTH17\BuiMinhHieu_CDTH17\obj\Debug\RdlCompile.compiled
 E:\Bai Tap Tot Nghiep\BuiMinhHieu_CDTH17\BuiMinhHieu_CDTH17\obj\Debug\BuiMinhHieu_CDTH17.InBienLai.resources
+E:\GIT BTTN\BaiTapTotNgiep\BuiMinhHieu_CDTH17\BuiMinhHieu_CDTH17\bin\Debug\BuiMinhHieu_CDTH17.exe.config
+E:\GIT BTTN\BaiTapTotNgiep\BuiMinhHieu_CDTH17\BuiMinhHieu_CDTH17\obj\Debug\BuiMinhHieu_CDTH17.exe
+E:\GIT BTTN\BaiTapTotNgiep\BuiMinhHieu_CDTH17\BuiMinhHieu_CDTH17\obj\Debug\BuiMinhHieu_CDTH17.pdb
