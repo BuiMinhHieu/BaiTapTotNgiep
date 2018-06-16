@@ -91,6 +91,7 @@ namespace BuiMinhHieu_CDTH17.form
             dataGridView1.DataSource = gettable("select * from TheoDoiLichAn");
             txtma.Clear();
             txtsongaynghi.Clear();
+            txtthangnam.Clear();
             txtghichu.Clear();
             dataGridView1.Enabled = true;
             btnsua.Enabled = false;
@@ -197,7 +198,7 @@ namespace BuiMinhHieu_CDTH17.form
             {
                 try
                 {
-                    if (txtma.Text != "" && cmbmahs.Text != "")
+                    if (txtma.Text != "" && cmbmahs.Text != "" && txtsongaynghi.Text != "")
                     {
                         con.Open();
                         SqlCommand cmd = new SqlCommand("them_theodoilichan", con);
