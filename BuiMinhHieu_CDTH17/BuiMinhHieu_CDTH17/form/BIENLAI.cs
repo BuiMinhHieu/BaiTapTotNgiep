@@ -27,7 +27,7 @@ namespace BuiMinhHieu_CDTH17.form
         private void BIENLAI_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'buiminhhieu_Qlthuhocphi_17DataSet13.BienLai' table. You can move, or remove it, as needed.
-            this.bienLaiTableAdapter4.Fill(this.buiminhhieu_Qlthuhocphi_17DataSet13.BienLai);              
+            this.bienLaiTableAdapter4.Fill(this.buiminhhieu_Qlthuhocphi_17DataSet13.BienLai);
             //// TODO: This line of code loads data into the 'buiminhhieu_Qlthuhocphi_17DataSet3.BienLai' table. You can move, or remove it, as needed.
             //this.bienLaiTableAdapter.Fill(this.buiminhhieu_Qlthuhocphi_17DataSet3.BienLai);
             //load();
@@ -78,7 +78,7 @@ namespace BuiMinhHieu_CDTH17.form
             connect();
             dataGridView1.DataSource = gettable("select * from BienLai");
             txtma.Clear();
-            txtnguoithu.Clear();           
+            txtnguoithu.Clear();
             dataGridView1.Enabled = true;
         }
         public void load1()//load bang csdl
@@ -87,15 +87,15 @@ namespace BuiMinhHieu_CDTH17.form
             dataGridView2.DataSource = gettable("select * from BienLai");
             txtma.Clear();
             txtnguoithu.Clear();
-       
+
             dataGridView1.Enabled = true;
         }
         private void Lock()
         {
             txtma.ReadOnly = true;// chỉ được nhìn
             cmbHS.Enabled = false;
-            txtnguoithu.ReadOnly = true;                    
-           
+            txtnguoithu.ReadOnly = true;
+
             btnluu.Enabled = false;
             btnthoat.Enabled = true;
         }
@@ -109,7 +109,7 @@ namespace BuiMinhHieu_CDTH17.form
             btnthoat.Enabled = true;
             txtma.Clear();
             txtnguoithu.Clear();
-           
+
         }
         private string Sinhmatudong(string ma)
         {
@@ -141,7 +141,7 @@ namespace BuiMinhHieu_CDTH17.form
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            dataGridView1.Enabled = false;         
+            dataGridView1.Enabled = false;
             Unlock();
             txtnguoithu.Focus();
             txtma.Text = Sinhmatudong("BL");
@@ -173,7 +173,7 @@ namespace BuiMinhHieu_CDTH17.form
                         {
                             MessageBox.Show(" Thêm mới thành công.");
                             //load();
-                            
+
                             try
                             {
 
@@ -202,7 +202,7 @@ namespace BuiMinhHieu_CDTH17.form
                     {
                         MessageBox.Show("Bạn chưa nhập đủ thông tin");
                     }
-                   
+
                 }
                 catch (Exception ex)
                 {
@@ -230,7 +230,7 @@ namespace BuiMinhHieu_CDTH17.form
             frm.ShowDialog();
         }
 
-     
+
 
         private void btntk_Click(object sender, EventArgs e)
         {
@@ -265,13 +265,35 @@ namespace BuiMinhHieu_CDTH17.form
         {
             load1();
             Unlock();
-            txtma.ReadOnly = false;           
+            txtma.ReadOnly = false;
             txtnguoithu.Clear();
             txtTK.Clear();
             txtma.Clear();
             cmbHS.Enabled = false;
         }
-            
+
+        private void btnResert_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormMain frmm = new FormMain();
+            frmm.ShowDialog();
+        }
+
+
+
+       
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ThongKe frm = new ThongKe();
+            frm.ShowDialog();
+        }
+
 
 
     }

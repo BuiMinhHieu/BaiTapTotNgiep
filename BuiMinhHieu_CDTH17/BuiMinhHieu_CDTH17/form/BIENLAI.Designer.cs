@@ -29,19 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnResert = new System.Windows.Forms.Button();
-            this.btnOpen = new System.Windows.Forms.Button();
-            this.btntk = new System.Windows.Forms.Button();
-            this.btnthoat = new System.Windows.Forms.Button();
-            this.btnluu = new System.Windows.Forms.Button();
-            this.btnthem = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BIENLAI));
             this.txtnguoithu = new System.Windows.Forms.TextBox();
             this.txtma = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idbienlaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thangnamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nguoithuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,13 +44,13 @@
             this.sotiennopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tongtienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idhocsinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bienLaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buiminhhieu_Qlthuhocphi_17DataSet3 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet3();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cmbHS = new System.Windows.Forms.ComboBox();
             this.bienLaiTableAdapter = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet3TableAdapters.BienLaiTableAdapter();
-            this.btnIn = new System.Windows.Forms.Button();
             this.buiminhhieu_Qlthuhocphi_17DataSet8 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet8();
             this.bienLaiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bienLaiTableAdapter1 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet8TableAdapters.BienLaiTableAdapter();
@@ -74,9 +68,6 @@
             this.bienLaiBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.bienLaiTableAdapter3 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet12TableAdapters.BienLaiTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.buiminhhieu_Qlthuhocphi_17DataSet13 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet13();
-            this.bienLaiBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.bienLaiTableAdapter4 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet13TableAdapters.BienLaiTableAdapter();
             this.idbienlaiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thangnamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nguoithuDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +76,18 @@
             this.sotiennopDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tongtienDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idhocsinhDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bienLaiBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.buiminhhieu_Qlthuhocphi_17DataSet13 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet13();
+            this.bienLaiTableAdapter4 = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet13TableAdapters.BienLaiTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnIn = new System.Windows.Forms.Button();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.btntk = new System.Windows.Forms.Button();
+            this.btnthoat = new System.Windows.Forms.Button();
+            this.btnluu = new System.Windows.Forms.Button();
+            this.btnthem = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bienLaiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet3)).BeginInit();
@@ -99,78 +102,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bienLaiBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bienLaiBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet13)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnResert
-            // 
-            this.btnResert.Location = new System.Drawing.Point(357, 63);
-            this.btnResert.Margin = new System.Windows.Forms.Padding(4);
-            this.btnResert.Name = "btnResert";
-            this.btnResert.Size = new System.Drawing.Size(100, 28);
-            this.btnResert.TabIndex = 80;
-            this.btnResert.Text = "Resert ";
-            this.btnResert.UseVisualStyleBackColor = true;
-            // 
-            // btnOpen
-            // 
-            this.btnOpen.Location = new System.Drawing.Point(357, 19);
-            this.btnOpen.Margin = new System.Windows.Forms.Padding(4);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(100, 28);
-            this.btnOpen.TabIndex = 79;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
-            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // btntk
-            // 
-            this.btntk.Location = new System.Drawing.Point(956, 39);
-            this.btntk.Margin = new System.Windows.Forms.Padding(4);
-            this.btntk.Name = "btntk";
-            this.btntk.Size = new System.Drawing.Size(100, 28);
-            this.btntk.TabIndex = 78;
-            this.btntk.Text = "Tìm kiếm";
-            this.btntk.UseVisualStyleBackColor = true;
-            this.btntk.Click += new System.EventHandler(this.btntk_Click);
-            // 
-            // btnthoat
-            // 
-            this.btnthoat.Location = new System.Drawing.Point(357, 104);
-            this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(100, 28);
-            this.btnthoat.TabIndex = 77;
-            this.btnthoat.Text = "Thoát";
-            this.btnthoat.UseVisualStyleBackColor = true;
-            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
-            // 
-            // btnluu
-            // 
-            this.btnluu.Location = new System.Drawing.Point(305, 162);
-            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(100, 45);
-            this.btnluu.TabIndex = 76;
-            this.btnluu.Text = "Lưu";
-            this.btnluu.UseVisualStyleBackColor = true;
-            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
-            // 
-            // btnthem
-            // 
-            this.btnthem.Location = new System.Drawing.Point(178, 162);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(100, 45);
-            this.btnthem.TabIndex = 73;
-            this.btnthem.Text = "Thêm";
-            this.btnthem.UseVisualStyleBackColor = true;
-            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // txtnguoithu
             // 
-            this.txtnguoithu.Location = new System.Drawing.Point(192, 104);
+            this.txtnguoithu.Location = new System.Drawing.Point(205, 104);
             this.txtnguoithu.Margin = new System.Windows.Forms.Padding(4);
             this.txtnguoithu.Name = "txtnguoithu";
             this.txtnguoithu.Size = new System.Drawing.Size(132, 22);
@@ -178,7 +116,7 @@
             // 
             // txtma
             // 
-            this.txtma.Location = new System.Drawing.Point(192, 10);
+            this.txtma.Location = new System.Drawing.Point(205, 10);
             this.txtma.Margin = new System.Windows.Forms.Padding(4);
             this.txtma.Name = "txtma";
             this.txtma.Size = new System.Drawing.Size(132, 22);
@@ -187,7 +125,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 104);
+            this.label4.Location = new System.Drawing.Point(96, 104);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 17);
@@ -197,7 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 79);
+            this.label3.Location = new System.Drawing.Point(96, 79);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 17);
@@ -208,7 +146,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(32, 19);
+            this.label2.Location = new System.Drawing.Point(98, 19);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 17);
@@ -220,7 +158,6 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
             this.idbienlaiDataGridViewTextBoxColumn,
             this.thangnamDataGridViewTextBoxColumn,
             this.nguoithuDataGridViewTextBoxColumn,
@@ -228,7 +165,8 @@
             this.tienanDataGridViewTextBoxColumn,
             this.sotiennopDataGridViewTextBoxColumn,
             this.tongtienDataGridViewTextBoxColumn,
-            this.idhocsinhDataGridViewTextBoxColumn});
+            this.idhocsinhDataGridViewTextBoxColumn,
+            this.STT});
             this.dataGridView1.DataSource = this.bienLaiBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 243);
             this.dataGridView1.Name = "dataGridView1";
@@ -236,11 +174,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(612, 209);
             this.dataGridView1.TabIndex = 83;
             this.dataGridView1.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridView1_RowPrePaint);
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
             // 
             // idbienlaiDataGridViewTextBoxColumn
             // 
@@ -290,6 +223,11 @@
             this.idhocsinhDataGridViewTextBoxColumn.HeaderText = "Mã Học Sinh";
             this.idhocsinhDataGridViewTextBoxColumn.Name = "idhocsinhDataGridViewTextBoxColumn";
             // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
             // bienLaiBindingSource
             // 
             this.bienLaiBindingSource.DataMember = "BienLai";
@@ -303,7 +241,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 39);
+            this.label5.Location = new System.Drawing.Point(96, 39);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 17);
@@ -312,7 +250,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(192, 69);
+            this.dateTimePicker1.Location = new System.Drawing.Point(205, 69);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(132, 22);
             this.dateTimePicker1.TabIndex = 92;
@@ -320,7 +258,7 @@
             // cmbHS
             // 
             this.cmbHS.FormattingEnabled = true;
-            this.cmbHS.Location = new System.Drawing.Point(192, 39);
+            this.cmbHS.Location = new System.Drawing.Point(205, 39);
             this.cmbHS.Name = "cmbHS";
             this.cmbHS.Size = new System.Drawing.Size(132, 24);
             this.cmbHS.TabIndex = 93;
@@ -328,17 +266,6 @@
             // bienLaiTableAdapter
             // 
             this.bienLaiTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnIn
-            // 
-            this.btnIn.Location = new System.Drawing.Point(428, 162);
-            this.btnIn.Margin = new System.Windows.Forms.Padding(4);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(100, 45);
-            this.btnIn.TabIndex = 94;
-            this.btnIn.Text = "In Phiếu";
-            this.btnIn.UseVisualStyleBackColor = true;
-            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // buiminhhieu_Qlthuhocphi_17DataSet8
             // 
@@ -384,11 +311,11 @@
             // 
             // txtTK
             // 
-            this.txtTK.Location = new System.Drawing.Point(772, 39);
+            this.txtTK.Location = new System.Drawing.Point(736, 104);
             this.txtTK.Margin = new System.Windows.Forms.Padding(4);
             this.txtTK.Multiline = true;
             this.txtTK.Name = "txtTK";
-            this.txtTK.Size = new System.Drawing.Size(176, 28);
+            this.txtTK.Size = new System.Drawing.Size(214, 25);
             this.txtTK.TabIndex = 96;
             // 
             // buiminhhieu_Qlthuhocphi_17DataSet11
@@ -433,26 +360,12 @@
             this.tongtienDataGridViewTextBoxColumn1,
             this.idhocsinhDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.bienLaiBindingSource4;
-            this.dataGridView2.Location = new System.Drawing.Point(618, 74);
+            this.dataGridView2.Location = new System.Drawing.Point(618, 162);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(576, 378);
+            this.dataGridView2.Size = new System.Drawing.Size(576, 290);
             this.dataGridView2.TabIndex = 97;
             this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
-            // 
-            // buiminhhieu_Qlthuhocphi_17DataSet13
-            // 
-            this.buiminhhieu_Qlthuhocphi_17DataSet13.DataSetName = "Buiminhhieu_Qlthuhocphi_17DataSet13";
-            this.buiminhhieu_Qlthuhocphi_17DataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bienLaiBindingSource4
-            // 
-            this.bienLaiBindingSource4.DataMember = "BienLai";
-            this.bienLaiBindingSource4.DataSource = this.buiminhhieu_Qlthuhocphi_17DataSet13;
-            // 
-            // bienLaiTableAdapter4
-            // 
-            this.bienLaiTableAdapter4.ClearBeforeFill = true;
             // 
             // idbienlaiDataGridViewTextBoxColumn1
             // 
@@ -502,11 +415,148 @@
             this.idhocsinhDataGridViewTextBoxColumn1.HeaderText = "Idhocsinh";
             this.idhocsinhDataGridViewTextBoxColumn1.Name = "idhocsinhDataGridViewTextBoxColumn1";
             // 
+            // bienLaiBindingSource4
+            // 
+            this.bienLaiBindingSource4.DataMember = "BienLai";
+            this.bienLaiBindingSource4.DataSource = this.buiminhhieu_Qlthuhocphi_17DataSet13;
+            // 
+            // buiminhhieu_Qlthuhocphi_17DataSet13
+            // 
+            this.buiminhhieu_Qlthuhocphi_17DataSet13.DataSetName = "Buiminhhieu_Qlthuhocphi_17DataSet13";
+            this.buiminhhieu_Qlthuhocphi_17DataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bienLaiTableAdapter4
+            // 
+            this.bienLaiTableAdapter4.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 68);
+            this.button1.TabIndex = 98;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnIn
+            // 
+            this.btnIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnIn.Image = ((System.Drawing.Image)(resources.GetObject("btnIn.Image")));
+            this.btnIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIn.Location = new System.Drawing.Point(441, 162);
+            this.btnIn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(134, 45);
+            this.btnIn.TabIndex = 94;
+            this.btnIn.Text = "In Phiếu";
+            this.btnIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.Image = ((System.Drawing.Image)(resources.GetObject("btnOpen.Image")));
+            this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOpen.Location = new System.Drawing.Point(370, 19);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(100, 37);
+            this.btnOpen.TabIndex = 79;
+            this.btnOpen.Text = "Open";
+            this.btnOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btntk
+            // 
+            this.btntk.Image = ((System.Drawing.Image)(resources.GetObject("btntk.Image")));
+            this.btntk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btntk.Location = new System.Drawing.Point(958, 96);
+            this.btntk.Margin = new System.Windows.Forms.Padding(4);
+            this.btntk.Name = "btntk";
+            this.btntk.Size = new System.Drawing.Size(118, 47);
+            this.btntk.TabIndex = 78;
+            this.btntk.TabStop = false;
+            this.btntk.Text = "Tìm kiếm";
+            this.btntk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btntk.UseVisualStyleBackColor = true;
+            this.btntk.Click += new System.EventHandler(this.btntk_Click);
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.Image")));
+            this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnthoat.Location = new System.Drawing.Point(370, 83);
+            this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(118, 38);
+            this.btnthoat.TabIndex = 77;
+            this.btnthoat.Text = "Thoát";
+            this.btnthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
+            // 
+            // btnluu
+            // 
+            this.btnluu.Image = ((System.Drawing.Image)(resources.GetObject("btnluu.Image")));
+            this.btnluu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnluu.Location = new System.Drawing.Point(318, 162);
+            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnluu.Name = "btnluu";
+            this.btnluu.Size = new System.Drawing.Size(100, 45);
+            this.btnluu.TabIndex = 76;
+            this.btnluu.Text = "Lưu";
+            this.btnluu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnluu.UseVisualStyleBackColor = true;
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
+            // 
+            // btnthem
+            // 
+            this.btnthem.Image = ((System.Drawing.Image)(resources.GetObject("btnthem.Image")));
+            this.btnthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnthem.Location = new System.Drawing.Point(191, 162);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(100, 45);
+            this.btnthem.TabIndex = 73;
+            this.btnthem.Text = "Thêm";
+            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(696, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(329, 17);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "THỐNG KÊ DANH SÁCH HỌC SINH NỘP HỌC PHÍ";
+            // 
+            // button2
+            // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(814, 39);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 52);
+            this.button2.TabIndex = 101;
+            this.button2.TabStop = false;
+            this.button2.Text = "Tìm kiếm";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // BIENLAI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 453);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.txtTK);
             this.Controls.Add(this.btnIn);
@@ -514,7 +564,6 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnResert);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btntk);
             this.Controls.Add(this.btnthoat);
@@ -526,6 +575,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "BIENLAI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BIENLAI";
             this.Load += new System.EventHandler(this.BIENLAI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -542,8 +592,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bienLaiBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bienLaiBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -551,7 +601,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnResert;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btntk;
         private System.Windows.Forms.Button btnthoat;
@@ -607,5 +656,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sotiennopDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongtienDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idhocsinhDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }

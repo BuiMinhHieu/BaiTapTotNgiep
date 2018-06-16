@@ -333,6 +333,41 @@ namespace BuiMinhHieu_CDTH17
             txtmiengiam .Clear();
         }
 
+        private void btnResert_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btntk_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(chuoiketnoi);
+                con.Open();
+                string sqlSeach = "select * from DoiTuongMienGiam where Iddoituong = @Iddoituong or Tendoituong = @Tendoituong";
+                SqlCommand cmd = new SqlCommand(sqlSeach, con);
+                cmd.Parameters.AddWithValue("@Iddoituong", txtma.Text);
+                cmd.Parameters.AddWithValue("@Tendoituong", txtten.Text);
+
+                cmd.ExecuteNonQuery();
+                SqlDataReader dr = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(dr);
+                dataGridView1.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối..!!!" + ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormMain frmm = new FormMain();
+            frmm.ShowDialog();
+        }
+
 
 
 

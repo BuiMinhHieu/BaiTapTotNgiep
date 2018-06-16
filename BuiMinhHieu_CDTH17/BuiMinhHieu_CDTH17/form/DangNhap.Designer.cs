@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             this.btndangnhap = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.txttaikhoan = new System.Windows.Forms.TextBox();
@@ -38,9 +39,10 @@
             // 
             // btndangnhap
             // 
-            this.btndangnhap.Location = new System.Drawing.Point(119, 163);
+            this.btndangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndangnhap.Location = new System.Drawing.Point(97, 163);
             this.btndangnhap.Name = "btndangnhap";
-            this.btndangnhap.Size = new System.Drawing.Size(75, 23);
+            this.btndangnhap.Size = new System.Drawing.Size(75, 34);
             this.btndangnhap.TabIndex = 0;
             this.btndangnhap.Text = "LOGIN";
             this.btndangnhap.UseVisualStyleBackColor = true;
@@ -48,9 +50,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(200, 163);
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(178, 163);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(85, 34);
             this.button2.TabIndex = 1;
             this.button2.Text = "EXIT ";
             this.button2.UseVisualStyleBackColor = true;
@@ -101,6 +104,7 @@
             this.Controls.Add(this.txttaikhoan);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btndangnhap);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhap";

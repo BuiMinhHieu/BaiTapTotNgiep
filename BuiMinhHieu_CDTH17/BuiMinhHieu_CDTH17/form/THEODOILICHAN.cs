@@ -101,7 +101,7 @@ namespace BuiMinhHieu_CDTH17.form
             txtma.ReadOnly = true;// chỉ được nhìn
             txtsongaynghi.ReadOnly = true;
             txtghichu.ReadOnly = true;
-            dateTimePicker1.Enabled = false;
+            txtthangnam.ReadOnly = false;
             cmbmahs.Enabled = false;
             btnsua.Enabled = false;
             btnxoa.Enabled = false;
@@ -114,7 +114,7 @@ namespace BuiMinhHieu_CDTH17.form
             txtsongaynghi.ReadOnly = false;
             txtghichu.ReadOnly = false;
             cmbmahs.Enabled = true;
-            dateTimePicker1.Enabled = false;
+            txtthangnam.ReadOnly = false;
             btnsua.Enabled = true;
             btnxoa.Enabled = true;
             btnluu.Enabled = true;
@@ -203,7 +203,7 @@ namespace BuiMinhHieu_CDTH17.form
                         SqlCommand cmd = new SqlCommand("them_theodoilichan", con);
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@ma", txtma.Text);
-                        cmd.Parameters.AddWithValue("@thangnam", dt);
+                        cmd.Parameters.AddWithValue("@thangnam", txtthangnam.Text);
                         cmd.Parameters.AddWithValue("@songaynghi", txtsongaynghi.Text);
                         cmd.Parameters.AddWithValue("@ghichu", txtghichu.Text);
                         cmd.Parameters.AddWithValue("@mahs", cmbmahs.SelectedValue.ToString());
@@ -243,7 +243,7 @@ namespace BuiMinhHieu_CDTH17.form
                         SqlCommand cmd = new SqlCommand("sua_theodoilichan", con);
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@ma", txtma.Text);
-                     
+                        cmd.Parameters.AddWithValue("@thangnam", txtthangnam.Text);
                         cmd.Parameters.AddWithValue("@songaynghi", txtsongaynghi.Text);
                         cmd.Parameters.AddWithValue("@ghichu", txtghichu.Text);
                       
@@ -370,9 +370,18 @@ namespace BuiMinhHieu_CDTH17.form
             txtma.DataBindings.Add("text", dataGridView1.DataSource, "Idphieu");
             txtsongaynghi.DataBindings.Clear();
             txtsongaynghi.DataBindings.Add("text", dataGridView1.DataSource, "Songaynghi");
+            txtthangnam.DataBindings.Clear();
+            txtthangnam.DataBindings.Add("text", dataGridView1.DataSource, "Thangnam");
             txtghichu.DataBindings.Clear();
             txtghichu.DataBindings.Add("text", dataGridView1.DataSource, "Ghichu");
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormMain frmm = new FormMain();
+            frmm.ShowDialog();
         }
     }
 }

@@ -433,6 +433,13 @@ namespace BuiMinhHieu_CDTH17.form
             con.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormMain frmm = new FormMain();
+            frmm.ShowDialog();
+        }
+
 
 
     }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LOP));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnResert = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
             this.btntk = new System.Windows.Forms.Button();
             this.btnthoat = new System.Windows.Forms.Button();
@@ -55,6 +55,7 @@
             this.lopTableAdapter = new BuiMinhHieu_CDTH17.Buiminhhieu_Qlthuhocphi_17DataSet5TableAdapters.LopTableAdapter();
             this.cmbMT = new System.Windows.Forms.ComboBox();
             this.txtTK = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buiminhhieu_Qlthuhocphi_17DataSet5)).BeginInit();
@@ -63,73 +64,77 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 111);
+            this.label1.Location = new System.Drawing.Point(100, 111);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 17);
             this.label1.TabIndex = 81;
             this.label1.Text = "Mã Mức Thu";
             // 
-            // btnResert
-            // 
-            this.btnResert.Location = new System.Drawing.Point(367, 62);
-            this.btnResert.Margin = new System.Windows.Forms.Padding(4);
-            this.btnResert.Name = "btnResert";
-            this.btnResert.Size = new System.Drawing.Size(100, 28);
-            this.btnResert.TabIndex = 80;
-            this.btnResert.Text = "Resert ";
-            this.btnResert.UseVisualStyleBackColor = true;
-            // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(367, 26);
+            this.btnOpen.Image = ((System.Drawing.Image)(resources.GetObject("btnOpen.Image")));
+            this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOpen.Location = new System.Drawing.Point(369, 62);
             this.btnOpen.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(100, 28);
+            this.btnOpen.Size = new System.Drawing.Size(100, 41);
             this.btnOpen.TabIndex = 79;
             this.btnOpen.Text = "Open";
+            this.btnOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btntk
             // 
+            this.btntk.Image = ((System.Drawing.Image)(resources.GetObject("btntk.Image")));
+            this.btntk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntk.Location = new System.Drawing.Point(493, 62);
             this.btntk.Margin = new System.Windows.Forms.Padding(4);
             this.btntk.Name = "btntk";
-            this.btntk.Size = new System.Drawing.Size(100, 28);
+            this.btntk.Size = new System.Drawing.Size(100, 41);
             this.btntk.TabIndex = 78;
             this.btntk.Text = "Tìm kiếm";
+            this.btntk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btntk.UseVisualStyleBackColor = true;
             this.btntk.Click += new System.EventHandler(this.btntk_Click);
             // 
             // btnthoat
             // 
+            this.btnthoat.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.Image")));
+            this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthoat.Location = new System.Drawing.Point(454, 151);
             this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(100, 28);
+            this.btnthoat.Size = new System.Drawing.Size(100, 40);
             this.btnthoat.TabIndex = 77;
             this.btnthoat.Text = "Thoát";
+            this.btnthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthoat.UseVisualStyleBackColor = true;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btnluu
             // 
+            this.btnluu.Image = ((System.Drawing.Image)(resources.GetObject("btnluu.Image")));
+            this.btnluu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnluu.Location = new System.Drawing.Point(346, 151);
             this.btnluu.Margin = new System.Windows.Forms.Padding(4);
             this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(100, 28);
+            this.btnluu.Size = new System.Drawing.Size(100, 40);
             this.btnluu.TabIndex = 76;
             this.btnluu.Text = "Lưu";
+            this.btnluu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnluu.UseVisualStyleBackColor = true;
             this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btnxoa
             // 
+            this.btnxoa.Image = ((System.Drawing.Image)(resources.GetObject("btnxoa.Image")));
+            this.btnxoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxoa.Location = new System.Drawing.Point(238, 151);
             this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(100, 28);
+            this.btnxoa.Size = new System.Drawing.Size(100, 40);
             this.btnxoa.TabIndex = 75;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
@@ -137,23 +142,29 @@
             // 
             // btnsua
             // 
+            this.btnsua.Image = ((System.Drawing.Image)(resources.GetObject("btnsua.Image")));
+            this.btnsua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsua.Location = new System.Drawing.Point(130, 151);
             this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(100, 28);
+            this.btnsua.Size = new System.Drawing.Size(100, 40);
             this.btnsua.TabIndex = 74;
             this.btnsua.Text = "Sửa";
+            this.btnsua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsua.UseVisualStyleBackColor = true;
             this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnthem
             // 
+            this.btnthem.Image = ((System.Drawing.Image)(resources.GetObject("btnthem.Image")));
+            this.btnthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthem.Location = new System.Drawing.Point(22, 151);
             this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(100, 28);
+            this.btnthem.Size = new System.Drawing.Size(100, 40);
             this.btnthem.TabIndex = 73;
             this.btnthem.Text = "Thêm";
+            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthem.UseVisualStyleBackColor = true;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
@@ -184,7 +195,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 81);
+            this.label4.Location = new System.Drawing.Point(100, 81);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 17);
@@ -194,7 +205,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 56);
+            this.label3.Location = new System.Drawing.Point(100, 56);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 17);
@@ -205,7 +216,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(42, 26);
+            this.label2.Location = new System.Drawing.Point(102, 26);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 17);
@@ -291,16 +302,26 @@
             this.txtTK.Size = new System.Drawing.Size(132, 22);
             this.txtTK.TabIndex = 85;
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 70);
+            this.button1.TabIndex = 86;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LOP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 388);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTK);
             this.Controls.Add(this.cmbMT);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnResert);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btntk);
             this.Controls.Add(this.btnthoat);
@@ -328,7 +349,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnResert;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btntk;
         private System.Windows.Forms.Button btnthoat;
@@ -353,5 +373,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idmucthuDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox cmbMT;
         private System.Windows.Forms.TextBox txtTK;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -58,7 +58,9 @@ namespace BuiMinhHieu_CDTH17
 
         private void eXITToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            DangNhap dn = new DangNhap();
+            dn.ShowDialog();
         }
 
         private void FormMain_Resize(object sender, EventArgs e)
@@ -86,6 +88,11 @@ namespace BuiMinhHieu_CDTH17
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void eXITToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
